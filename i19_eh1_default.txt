@@ -1,0 +1,106 @@
+### Detector Defaults ###
+### esperanto_to_sfrm.py ###
+
+### For Recording Purposes ###
+#max 72 characters#
+Data_type = none
+Site = none
+User_name = none
+Sample_ID = none
+Setname = none
+User_comment_1 = none
+User_comment_2 = none
+User_comment_3 = none
+User_comment_4 = none
+User_comment_5 = none
+User_comment_6 = none
+
+# filenames (don't have to work - Apex2 won't have access to these) #
+Original_frame_filename = none
+Flood_field_correction_filename = none
+Brass_plate_correction_filename = none
+Display_lookup = none
+Display_limit1 = 0
+Display_limit2 = 0
+
+###
+
+Xray_target_material = none
+Voltage = 0.000000
+Current = 0.000000
+Filter_monochromator_setting = none
+Low_temp_flag = 0
+exp_temp_in_hundredths = 0
+ccd_temp_in_hundredths = 0
+
+# Zoom #
+
+X_c = 0.00000
+Y_c = 0.00000
+Mag = 0.00000
+
+# for archival #
+
+Chemical_formula = ?
+Crystal_morphology = ?
+Crystal_colour = ?
+Density_measurement_method = ?
+
+# max 24 characters
+Crystal_dimension_1 = ?
+Crystal_dimension_2 = ?
+Crystal_dimension_3 = ?
+
+##
+Det_type = CMOS-PHOTON100
+Brass_hole_spacing = 0.100000
+Phosphor_distance = 0.00000
+Be_window_thickness = 0.00000
+Det_4 = 0
+Det_7 = 0
+
+# detector position corrections #
+
+dX = 0
+dY = 0 
+dDist = 0.0000
+pitch =0
+roll = 0
+yaw =0
+
+# ccd parameters #
+
+readnoise = 0.00000
+e_ADU =0.00000
+e_photon =0.00000
+bias =0.00000
+full_scale = 243592.0
+
+# auto ranging #
+
+gain = 0.00000
+high_speed_time =0.00000
+scale =0.00000
+offset =0.00000
+auto_full_scale = 243592.0
+
+# monochromator #
+mono_2theta =0.00000
+mono_roll =0.00000
+mono_tilt =0.00000
+attenuation_factor = 0.00000
+
+# Nexp #
+no_of_exposures = 1
+per_eposure_bias = 0
+baseline_offset = 0
+orientation = 0
+over_scan_flag = 0
+
+
+# #
+
+kappa_offset = 50
+omega_offset = 180
+geometry = eulerian
+chi_offset = 0
