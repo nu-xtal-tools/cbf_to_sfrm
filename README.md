@@ -18,19 +18,19 @@ default text file
 ## To Run:
 useage of this file: cbf_to_sfrm_2016.py, cbf_file, name_string of cbf file, default file, output directory, number of runs, number of processes to be run, number of frames to add
 
-cbf_file = full file location of one of the files to be converted
+**cbf_file** full file location of one of the files to be converted
 
-name_string = file name up to (but not including) the run number
+**name_string** file name up to (but not including) the run number
 
-default file = text file containing information required by .sfrm format that is not present in .cbf header (as well as any offsets and the angle conversion requires)
+**default file** text file containing information required by .sfrm format that is not present in .cbf header (as well as any offsets and the angle conversion requires)
 
-output directory = location of folder to which the frames will be saved (currently: previous directories  have to be present, will make a folder in the directory present
+**output directory** location of folder to which the frames will be saved (currently: previous directories  have to be present, will make a folder in the directory present
 
-number of runs = number of runs to be converted (*currently: will start numbering from 1 - given number, can't only convert from 3-5 for example*)
+**number of runs** number of runs to be converted (*currently: will start numbering from 1 - given number, can't only convert from 3-5 for example*)
 
-number of processes to be run = code is parallelised. give number of processes you wish to set away
+**number of processes to be run** code is parallelised. give number of processes you wish to set away
 
-number of frames to add = the code can add up the images from a number of consequtive cbf frames into one sfrm frame. e.g. 1 for no addition, 5 for 5 cbf frames to be added to make 1 sfrm frame. *Note: this feature has not been extensively tested*
+**number of frames to add** the code can add up the images from a number of consequtive cbf frames into one sfrm frame. e.g. 1 for no addition, 5 for 5 cbf frames to be added to make 1 sfrm frame. *Note: this feature has not been extensively tested*
 
 e.g. `python cbf_to_sfrm_2016-compress.py /home/Documents/cbfs/cbf_100K_02_00004.cbf cbf_100K_ default_file.txt /home/Documents/converted_cbf/cbf_100K 4 7 2`
 for runs 1-4 of cbf_100K... to be converted with 7 processes being set away and two cbf frames being added together into one sfrm frame.
