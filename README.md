@@ -19,7 +19,7 @@ Tested with: python (2.7.5), numpy (1.7.1) (on scientific linux).
 - *mask files are also currently advised for processing of data, as frames have been padded*
 
 ## To Run:
-useage of this file: cbf_to_sfrm_2016.py, cbf_file, name_string of cbf file, default file, output directory, number of runs, number of processes to be run, number of frames to add
+**useage of this file:** *cbf_to_sfrm_2016.py, cbf_file, name_string of cbf file, default file, output directory, number of runs, number of processes to be run, number of frames to add*
 
 **cbf_file:** full file location of one of the files to be converted
 
