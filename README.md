@@ -14,7 +14,7 @@ Tested with: python (2.7.5), numpy (1.7.1) (on scientific linux).
 
 ## Required files:
 - cbf_to_sfrm_2016.py
-- pilatus_header_c2sedit.py
+- pilatus_header_c2sedit.py *a minor edit of pilatus_header.py, provided with kind permission by Marcus Mueller, Dectris Ltd.*
 - default text file - *default files for i19-eh1/eh2 are included in repository*
 - *mask files are also currently advised for processing of data, as frames have been padded*
 
