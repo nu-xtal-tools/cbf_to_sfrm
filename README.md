@@ -4,17 +4,17 @@ Code to convert .cbf diffraction frames into .sfrm format. (Currently only suppo
 Tested with: python (2.7.5), numpy (1.7.1) (on scientific linux).
 
 #IMPORTANT:
-- Bruker is not associated with this software and will not support this. (Please direct any queries to N.T.Johnson (N.Johnson5@ncl.ac.uk) or M.R.Probert (Michael.Probert@ncl.ac.uk))
+- Bruker is not associated with this software and will not support this. (Please direct any queries to N.T.Johnson (N.Johnson5@ncl.ac.uk) or M.R.Probert (Michael.Probert@ncl.ac.uk).)
 - Bruker reserves the right to make modifications to their frame format in the future which may affect this software's operation.
 - Code is still in alpha version. Use entirely at your own risk!!!
 
 ##Notes:
-- Currently frames are padded, masks for i19, eh1 and eh2 are available.
-- Further modifications will be made to test no padding for apex3.
+- Currently frames are padded; masks for i19, eh1 and eh2 are available.
+- Further modifications will be made to test a version with no padding for Apex3 (where square detectors are not required).
 
 ## Required files:
-- cbf_to_sfrm_2016.py
-- pilatus_header_c2sedit.py - *a minor edit of pilatus_header.py, provided with kind permission by Marcus Mueller, Dectris Ltd.*
+- `cbf_to_sfrm_2016.py`
+- `pilatus_header_c2sedit.py` - *a minor edit of pilatus_header.py, provided with kind permission by Marcus Mueller, Dectris Ltd.*
 - Default text file - *default files for i19-eh1/eh2 are included in repository*
 - *Mask files are also currently advised for processing of data, as frames have been padded*
 
@@ -36,6 +36,7 @@ Tested with: python (2.7.5), numpy (1.7.1) (on scientific linux).
 **number of frames to add together in the final dataset:** the code can add up the images from a number of consequtive cbf frames into one sfrm frame. e.g. 1 for no addition, 5 for 5 cbf frames to be added to make 1 sfrm frame. *Note: this feature has not been extensively tested*
 
 e.g. `python cbf_to_sfrm_2016-compress.py /home/Documents/cbfs/cbf_100K_02_00004.cbf cbf_100K_ default_file.txt /home/Documents/converted_cbf/cbf_100K 4 7 2`
+
 for runs 1-4 of cbf_100K... to be converted with 7 processes being set away and two cbf frames being added together into one sfrm frame.
 
 ### Bugs to be fixed:
