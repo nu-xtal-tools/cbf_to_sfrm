@@ -7,6 +7,7 @@ Tested with: python (2.7.5), numpy (1.7.1) (on scientific linux).
 - Bruker is not associated with this software and will not support this. (Please direct any queries to N.T.Johnson (N.Johnson5@ncl.ac.uk) or M.R.Probert (Michael.Probert@ncl.ac.uk).)
 - Bruker reserves the right to make modifications to their frame format in the future which may affect this software's operation.
 - Code is still in alpha version. Use entirely at your own risk!!!
+- Code gives detector as CMOS-Photon100, therefore SAINT integration may use some parameters that are built in values for this detector.
 
 ##Notes:
 - Currently frames are padded; masks for i19, eh1 and eh2 are available.
