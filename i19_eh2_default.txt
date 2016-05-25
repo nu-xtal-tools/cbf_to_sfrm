@@ -1,5 +1,5 @@
 ### Detector Defaults ###
-### esperanto_to_sfrm.py ###
+### cbf_to_sfrm.py ###
 
 ### For Recording Purposes ###
 #max 72 characters#
