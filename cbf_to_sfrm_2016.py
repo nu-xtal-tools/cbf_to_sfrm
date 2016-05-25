@@ -786,7 +786,7 @@ def compile_header(some_marker):
         pix_size_tup = (header_vals["Pixel_size"])
         #calculating pixels per cm, way .sfrm currently requires pixel size to be input
         pix_size = float(pix_size_tup[0])*1000
-        pix_mm = (10/pix_size)*(512/float(some_marker))  #changed to work for 1024 and 2048
+        pix_mm = (10/pix_size)*(512/float(some_marker))  #assumes detector size in 512x512 format
         pix_mm = round(pix_mm,6)
         header_list.append("DETTYPE:" + str(default_vals["Det_type"]).ljust(21) + str(pix_mm).ljust(12) + str(default_vals["Phosphor_distance"]).ljust(12) + str(default_vals["Det_4"]).ljust(2) +  str(default_vals["Brass_hole_spacing"]).ljust(12) + str(default_vals["Be_window_thickness"]).ljust(12) + str(default_vals["Det_7"]).ljust(1)) #det-type (needs a name), pix per cm (scaled), phosphor, ?, brass, Be, ?)
         #det-type (needs a name), pix per cm (scaled), phosphor, ?, brass, Be, ?)
