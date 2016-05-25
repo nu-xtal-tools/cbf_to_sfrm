@@ -8,7 +8,7 @@
 # - Bruker reserves the right to make modifications to their frame format in the future which may affect this software's operation.
 # - Code is still in alpha version. Use entirely at your own risk!!!
 #
-# - currently frames are padded, masks for i19 eh1 and eh2 are available.
+# - currently frames are padded (as Apex requires square detector), masks for i19 eh1 and eh2 are available.
 # - further modifications will be made to test no padding for apex3.
 #
 # Angles (in default_file):
@@ -812,10 +812,12 @@ def compile_header(some_marker):
         header_list.append("LEPTOS :" + "".ljust(72))
         header_list.append("CFR: HDR:  IMG: " + "".ljust(62,".") + "\x1a" + "\x04" ) #final lines of header
         header_string = "".join(header_list) # joins everything in header list into a string
+        ### For mask - no longer used, but retained for completeness ###
         #pixelb_index = [i for i, s in enumerate(header_list) if 'NPIXELB:' in s] #changes bytes/pixel value in dynamic mask header value
         #pix_string = "NPIXELB:" + "1".ljust(36) + "1".ljust(36)
         #header_list[pixelb_index[0]] = pix_string #resets pixel count to 1 bperp for dynamic mask
-        #self.dm_header = "".join(header_list)
+        #dm_header = "".join(header_list)
+        ###
         return header_string 
 
 if len(sys.argv) != 8:
