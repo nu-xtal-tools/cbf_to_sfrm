@@ -63,8 +63,7 @@ def Conversion(cbf_file, name_string, default_file, dir_out, runs, cores, compre
         # if having problems with multiprocessing, comment out multiprocessing and uncomment regular processing below to help figure out problem
         #for i in file_list:
         #        print i
-        #        run_conversion(i)
-        #run_conversion(file_list)
+        #        run_conversion(i)     #run_conversion(file_list) - don't think this is needed
         ####
         print datetime.datetime.now().time()
         #self.make_dm(self.some_marker) 
